@@ -9,7 +9,5 @@ class TestStringSearch(unittest.TestCase):
         self.assertEqual(string_search.naive_search('abc', 'c'), [2])
         self.assertEqual(string_search.naive_search('abc', 'x'), [])
 
-
-
 if __name__ == '__main__':
     unittest.main()
