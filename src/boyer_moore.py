@@ -42,14 +42,9 @@ def get_good_suffix_table(P):
 
 def get_bad_char_table(P):
     bad_char_table = {}
-    m = len(P)
-    last = {}
-    for i in range(m):
-
-        if len(last) > 0:
-            for c in last:
-                bad_char_table[(i,c)] = i - last[c]
-        last[P[i]] = i
+    #####################################################################
+    ## ADD CODE HERE
+    #####################################################################
     return bad_char_table
 
 def boyer_moore_search(T, P):
